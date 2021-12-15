@@ -1,0 +1,8 @@
+@use 'colors';
+@use 'mixins';
+
+footer {
+    background-color: colors.$white;
+    font-style: italic;
+    padding: 1rem 2rem;
+}

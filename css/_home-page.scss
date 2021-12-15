@@ -1,0 +1,27 @@
+@use 'colors';
+@use 'mixins';
+
+section {
+    margin: 0 auto;
+    @include mixins.flexible;
+    justify-content: center;
+    @include mixins.break(small) {
+        justify-content: space-between;
+    }
+    .col {
+        text-align: center;
+        margin-bottom: 2.25rem; //36px
+        background-color: colors.$white;
+        font-size: 1.125rem;
+        padding-bottom: 2.25rem; //36px;
+
+        img {
+            margin-bottom: 2.25rem;
+        }
+        li { 
+            line-height: 2; //or 36px (18*2)
+        }
+
+    }
+
+}

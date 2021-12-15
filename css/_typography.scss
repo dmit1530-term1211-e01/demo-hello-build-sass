@@ -1,0 +1,19 @@
+@use 'colors';
+
+/** css comment **/
+//scss comment 
+
+h1 {
+    font-size: 7.8125rem; //125px
+    color: colors.$blue;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem; //32px
+    font-weight: bold;
+
+}
+
+p { margin-bottom: 1.5rem; }

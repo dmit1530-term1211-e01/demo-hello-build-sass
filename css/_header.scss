@@ -1,0 +1,46 @@
+@use 'colors';
+@use 'mixins';
+
+header {
+    background-color: colors.$white;
+    margin: 2.25rem 0; //36px
+    padding:0 1rem 4.5rem; // 0 16px 72px
+}
+
+.callout {
+    text-align: center;
+    @include mixins.flexible;
+     justify-content: center;   
+    
+    //nest our elements like we in our html
+    p {
+        font-size: 2rem; //32px
+        font-weight: bold;
+        color: colors.$grey;
+        margin-right: 0.5rem;
+    }
+    span {
+        color: colors.$blue;
+    }
+    a {
+        background-color: colors.$orange;
+        color: colors.$white;
+        border: 2px solid colors.$orange;
+        padding: 0.375rem; // 6px
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 1rem;
+        transition: all 0.3s ease-in-out;
+       
+
+        //hover effect
+        &:hover {
+            border: 2px solid colors.$orange;
+            background-color: colors.$white;
+            color: colors.$hover-grey;
+        }
+    }
+ 
+
+}
